@@ -1,0 +1,3329 @@
+[2025-11-15 01:29:26] === Quiz Save Request Started ===
+[2025-11-15 01:29:26] User logged in: 8
+[2025-11-15 01:29:26] Raw JSON: {"user_id":8,"book_id":2,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":4,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"B","is_correct":true},{"question_id":8,"user_answer":"C","is_correct":false},{"question_id":9,"user_answer":"C","is_correct":false},{"question_id":10,"user_answer":"C","is_correct":false}]}
+[2025-11-15 01:29:26] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 4
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:29:26] Extracted data - User: 8, Book: 2, Score: 2/5 (40%)
+[2025-11-15 01:29:26] Starting database operations...
+[2025-11-15 01:29:26] User verified: Ponpon Alarcon
+[2025-11-15 01:29:26] Book verified: Charlotte's Web
+[2025-11-15 01:29:26] Attempting to insert quiz attempt...
+[2025-11-15 01:29:26] Quiz attempt inserted successfully! Attempt ID: 2
+[2025-11-15 01:29:26] System log created
+[2025-11-15 01:29:26] Books completed count: 0
+[2025-11-15 01:29:26] Average score: 50%
+[2025-11-15 01:29:26] Processing rewards...
+[2025-11-15 01:29:26] Total rewards: 0
+[2025-11-15 01:29:26] Response data: Array
+(
+    [attempt_id] => 2
+    [books_completed] => 0
+    [average_score] => 50
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Charlotte's Web
+    [passed] => 
+)
+
+[2025-11-15 01:29:26] === Quiz Save Successful ===
+[2025-11-15 01:29:56] === Quiz Save Request Started ===
+[2025-11-15 01:29:56] User logged in: 8
+[2025-11-15 01:29:56] Raw JSON: {"user_id":8,"book_id":2,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"A","is_correct":false},{"question_id":8,"user_answer":"A","is_correct":false},{"question_id":9,"user_answer":"A","is_correct":false},{"question_id":10,"user_answer":"A","is_correct":false}]}
+[2025-11-15 01:29:56] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:29:56] Extracted data - User: 8, Book: 2, Score: 1/5 (20%)
+[2025-11-15 01:29:56] Starting database operations...
+[2025-11-15 01:29:56] User verified: Ponpon Alarcon
+[2025-11-15 01:29:56] Book verified: Charlotte's Web
+[2025-11-15 01:29:56] Attempting to insert quiz attempt...
+[2025-11-15 01:29:56] Quiz attempt inserted successfully! Attempt ID: 3
+[2025-11-15 01:29:56] System log created
+[2025-11-15 01:29:56] Books completed count: 0
+[2025-11-15 01:29:56] Average score: 40%
+[2025-11-15 01:29:56] Processing rewards...
+[2025-11-15 01:29:56] Total rewards: 0
+[2025-11-15 01:29:56] Response data: Array
+(
+    [attempt_id] => 3
+    [books_completed] => 0
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Charlotte's Web
+    [passed] => 
+)
+
+[2025-11-15 01:29:56] === Quiz Save Successful ===
+[2025-11-15 01:30:42] === Quiz Save Request Started ===
+[2025-11-15 01:30:42] User logged in: 8
+[2025-11-15 01:30:42] Raw JSON: {"user_id":8,"book_id":2,"total_questions":5,"correct_answers":5,"score_percentage":100,"time_taken":6,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"B","is_correct":true},{"question_id":8,"user_answer":"B","is_correct":true},{"question_id":9,"user_answer":"B","is_correct":true},{"question_id":10,"user_answer":"B","is_correct":true}]}
+[2025-11-15 01:30:42] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 5
+    [score_percentage] => 100
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:30:42] Extracted data - User: 8, Book: 2, Score: 5/5 (100%)
+[2025-11-15 01:30:42] Starting database operations...
+[2025-11-15 01:30:42] User verified: Ponpon Alarcon
+[2025-11-15 01:30:42] Book verified: Charlotte's Web
+[2025-11-15 01:30:42] Attempting to insert quiz attempt...
+[2025-11-15 01:30:42] Quiz attempt inserted successfully! Attempt ID: 4
+[2025-11-15 01:30:42] System log created
+[2025-11-15 01:30:42] Books completed count: 1
+[2025-11-15 01:30:42] Average score: 55%
+[2025-11-15 01:30:42] Processing rewards...
+[2025-11-15 01:30:42] Total rewards: 0
+[2025-11-15 01:30:42] Response data: Array
+(
+    [attempt_id] => 4
+    [books_completed] => 1
+    [average_score] => 55
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Charlotte's Web
+    [passed] => 1
+)
+
+[2025-11-15 01:30:42] === Quiz Save Successful ===
+[2025-11-15 01:33:05] === Quiz Save Request Started ===
+[2025-11-15 01:33:05] User logged in: 8
+[2025-11-15 01:33:05] Raw JSON: {"user_id":8,"book_id":2,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"D","is_correct":false},{"question_id":8,"user_answer":"C","is_correct":false},{"question_id":9,"user_answer":"C","is_correct":false},{"question_id":10,"user_answer":"C","is_correct":false}]}
+[2025-11-15 01:33:05] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:33:05] Extracted data - User: 8, Book: 2, Score: 1/5 (20%)
+[2025-11-15 01:33:05] Starting database operations...
+[2025-11-15 01:33:05] User verified: Ponpon Alarcon
+[2025-11-15 01:33:05] Book verified: Charlotte's Web
+[2025-11-15 01:33:05] Attempting to insert quiz attempt...
+[2025-11-15 01:33:05] Quiz attempt inserted successfully! Attempt ID: 5
+[2025-11-15 01:33:05] System log created
+[2025-11-15 01:33:05] Books completed count: 1
+[2025-11-15 01:33:05] Average score: 48%
+[2025-11-15 01:33:05] Processing rewards...
+[2025-11-15 01:33:05] Total rewards: 0
+[2025-11-15 01:33:05] Response data: Array
+(
+    [attempt_id] => 5
+    [books_completed] => 1
+    [average_score] => 48
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Charlotte's Web
+    [passed] => 
+)
+
+[2025-11-15 01:33:05] === Quiz Save Successful ===
+[2025-11-15 01:33:43] === Quiz Save Request Started ===
+[2025-11-15 01:33:43] User logged in: 8
+[2025-11-15 01:33:43] Raw JSON: {"user_id":8,"book_id":1,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"A","is_correct":false},{"question_id":3,"user_answer":"A","is_correct":false},{"question_id":4,"user_answer":"A","is_correct":false},{"question_id":5,"user_answer":"A","is_correct":false}]}
+[2025-11-15 01:33:43] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:33:43] Extracted data - User: 8, Book: 1, Score: 1/5 (20%)
+[2025-11-15 01:33:43] Starting database operations...
+[2025-11-15 01:33:43] User verified: Ponpon Alarcon
+[2025-11-15 01:33:43] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 01:33:43] Attempting to insert quiz attempt...
+[2025-11-15 01:33:43] Quiz attempt inserted successfully! Attempt ID: 6
+[2025-11-15 01:33:43] System log created
+[2025-11-15 01:33:43] Books completed count: 1
+[2025-11-15 01:33:43] Average score: 43.3%
+[2025-11-15 01:33:43] Processing rewards...
+[2025-11-15 01:33:43] Total rewards: 0
+[2025-11-15 01:33:43] Response data: Array
+(
+    [attempt_id] => 6
+    [books_completed] => 1
+    [average_score] => 43.3
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 01:33:43] === Quiz Save Successful ===
+[2025-11-15 01:33:53] === Quiz Save Request Started ===
+[2025-11-15 01:33:53] User logged in: 8
+[2025-11-15 01:33:53] Raw JSON: {"user_id":8,"book_id":1,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":6,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"A","is_correct":false},{"question_id":3,"user_answer":"A","is_correct":false},{"question_id":4,"user_answer":"B","is_correct":true},{"question_id":5,"user_answer":"A","is_correct":false}]}
+[2025-11-15 01:33:53] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:33:53] Extracted data - User: 8, Book: 1, Score: 2/5 (40%)
+[2025-11-15 01:33:53] Starting database operations...
+[2025-11-15 01:33:53] User verified: Ponpon Alarcon
+[2025-11-15 01:33:53] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 01:33:53] Attempting to insert quiz attempt...
+[2025-11-15 01:33:53] Quiz attempt inserted successfully! Attempt ID: 7
+[2025-11-15 01:33:53] System log created
+[2025-11-15 01:33:53] Books completed count: 1
+[2025-11-15 01:33:53] Average score: 42.9%
+[2025-11-15 01:33:53] Processing rewards...
+[2025-11-15 01:33:53] Total rewards: 0
+[2025-11-15 01:33:53] Response data: Array
+(
+    [attempt_id] => 7
+    [books_completed] => 1
+    [average_score] => 42.9
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 01:33:53] === Quiz Save Successful ===
+[2025-11-15 01:34:29] === Quiz Save Request Started ===
+[2025-11-15 01:34:29] User logged in: 8
+[2025-11-15 01:34:29] Raw JSON: {"user_id":8,"book_id":1,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":4,"responses":[{"question_id":1,"user_answer":"C","is_correct":false},{"question_id":2,"user_answer":"C","is_correct":false},{"question_id":3,"user_answer":"D","is_correct":false},{"question_id":4,"user_answer":"C","is_correct":false},{"question_id":5,"user_answer":"C","is_correct":true}]}
+[2025-11-15 01:34:29] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 4
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:34:29] Extracted data - User: 8, Book: 1, Score: 1/5 (20%)
+[2025-11-15 01:34:29] Starting database operations...
+[2025-11-15 01:34:29] User verified: Ponpon Alarcon
+[2025-11-15 01:34:29] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 01:34:29] Attempting to insert quiz attempt...
+[2025-11-15 01:34:29] Quiz attempt inserted successfully! Attempt ID: 8
+[2025-11-15 01:34:29] System log created
+[2025-11-15 01:34:29] Books completed count: 1
+[2025-11-15 01:34:29] Average score: 40%
+[2025-11-15 01:34:29] Processing rewards...
+[2025-11-15 01:34:29] Total rewards: 0
+[2025-11-15 01:34:29] Response data: Array
+(
+    [attempt_id] => 8
+    [books_completed] => 1
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 01:34:29] === Quiz Save Successful ===
+[2025-11-15 01:38:05] === Quiz Save Request Started ===
+[2025-11-15 01:38:05] User logged in: 8
+[2025-11-15 01:38:05] Raw JSON: {"user_id":8,"book_id":1,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":7,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"C","is_correct":false},{"question_id":3,"user_answer":"C","is_correct":true},{"question_id":4,"user_answer":"D","is_correct":false},{"question_id":5,"user_answer":"C","is_correct":true}]}
+[2025-11-15 01:38:05] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:38:05] Extracted data - User: 8, Book: 1, Score: 3/5 (60%)
+[2025-11-15 01:38:05] Starting database operations...
+[2025-11-15 01:38:05] User verified: Ponpon Alarcon
+[2025-11-15 01:38:05] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 01:38:05] Attempting to insert quiz attempt...
+[2025-11-15 01:38:05] Quiz attempt inserted successfully! Attempt ID: 9
+[2025-11-15 01:38:05] System log created
+[2025-11-15 01:38:05] Books completed count: 1
+[2025-11-15 01:38:05] Average score: 42.2%
+[2025-11-15 01:38:05] Processing rewards...
+[2025-11-15 01:38:05] Total rewards: 0
+[2025-11-15 01:38:05] Response data: Array
+(
+    [attempt_id] => 9
+    [books_completed] => 1
+    [average_score] => 42.2
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 01:38:05] === Quiz Save Successful ===
+[2025-11-15 01:38:25] === Quiz Save Request Started ===
+[2025-11-15 01:38:25] User logged in: 8
+[2025-11-15 01:38:25] Raw JSON: {"user_id":8,"book_id":2,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":6,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"C","is_correct":false},{"question_id":8,"user_answer":"C","is_correct":false},{"question_id":9,"user_answer":"B","is_correct":true},{"question_id":10,"user_answer":"C","is_correct":false}]}
+[2025-11-15 01:38:25] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:38:25] Extracted data - User: 8, Book: 2, Score: 2/5 (40%)
+[2025-11-15 01:38:25] Starting database operations...
+[2025-11-15 01:38:25] User verified: Ponpon Alarcon
+[2025-11-15 01:38:25] Book verified: Charlotte's Web
+[2025-11-15 01:38:25] Attempting to insert quiz attempt...
+[2025-11-15 01:38:25] Quiz attempt inserted successfully! Attempt ID: 10
+[2025-11-15 01:38:25] System log created
+[2025-11-15 01:38:25] Books completed count: 1
+[2025-11-15 01:38:25] Average score: 42%
+[2025-11-15 01:38:25] Processing rewards...
+[2025-11-15 01:38:25] Total rewards: 0
+[2025-11-15 01:38:25] Response data: Array
+(
+    [attempt_id] => 10
+    [books_completed] => 1
+    [average_score] => 42
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Charlotte's Web
+    [passed] => 
+)
+
+[2025-11-15 01:38:25] === Quiz Save Successful ===
+[2025-11-15 01:38:55] === Quiz Save Request Started ===
+[2025-11-15 01:38:55] User logged in: 8
+[2025-11-15 01:38:55] Raw JSON: {"user_id":8,"book_id":3,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":5,"responses":[{"question_id":11,"user_answer":"B","is_correct":false},{"question_id":12,"user_answer":"C","is_correct":false},{"question_id":13,"user_answer":"C","is_correct":false},{"question_id":14,"user_answer":"C","is_correct":true},{"question_id":15,"user_answer":"C","is_correct":false}]}
+[2025-11-15 01:38:55] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 3
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 5
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 11
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 12
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 13
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 14
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 15
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:38:55] Extracted data - User: 8, Book: 3, Score: 1/5 (20%)
+[2025-11-15 01:38:55] Starting database operations...
+[2025-11-15 01:38:55] User verified: Ponpon Alarcon
+[2025-11-15 01:38:55] Book verified: Where the Red Fern Grows
+[2025-11-15 01:38:55] Attempting to insert quiz attempt...
+[2025-11-15 01:38:55] Quiz attempt inserted successfully! Attempt ID: 11
+[2025-11-15 01:38:55] System log created
+[2025-11-15 01:38:55] Books completed count: 1
+[2025-11-15 01:38:55] Average score: 40%
+[2025-11-15 01:38:55] Processing rewards...
+[2025-11-15 01:38:55] Total rewards: 0
+[2025-11-15 01:38:55] Response data: Array
+(
+    [attempt_id] => 11
+    [books_completed] => 1
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => Where the Red Fern Grows
+    [passed] => 
+)
+
+[2025-11-15 01:38:55] === Quiz Save Successful ===
+[2025-11-15 01:39:28] === Quiz Save Request Started ===
+[2025-11-15 01:39:28] User logged in: 8
+[2025-11-15 01:39:28] Raw JSON: {"user_id":8,"book_id":4,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":8,"responses":[{"question_id":16,"user_answer":"A","is_correct":false},{"question_id":17,"user_answer":"A","is_correct":true},{"question_id":18,"user_answer":"A","is_correct":false},{"question_id":19,"user_answer":"A","is_correct":false},{"question_id":20,"user_answer":"B","is_correct":false}]}
+[2025-11-15 01:39:28] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 4
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 8
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 16
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 17
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 18
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 19
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 20
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:39:28] Extracted data - User: 8, Book: 4, Score: 1/5 (20%)
+[2025-11-15 01:39:28] Starting database operations...
+[2025-11-15 01:39:28] User verified: Ponpon Alarcon
+[2025-11-15 01:39:28] Book verified: The Lion, the Witch and the Wardrobe
+[2025-11-15 01:39:28] Attempting to insert quiz attempt...
+[2025-11-15 01:39:28] Quiz attempt inserted successfully! Attempt ID: 12
+[2025-11-15 01:39:28] System log created
+[2025-11-15 01:39:28] Books completed count: 1
+[2025-11-15 01:39:28] Average score: 38.3%
+[2025-11-15 01:39:28] Processing rewards...
+[2025-11-15 01:39:28] Total rewards: 0
+[2025-11-15 01:39:28] Response data: Array
+(
+    [attempt_id] => 12
+    [books_completed] => 1
+    [average_score] => 38.3
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Lion, the Witch and the Wardrobe
+    [passed] => 
+)
+
+[2025-11-15 01:39:28] === Quiz Save Successful ===
+[2025-11-15 01:41:30] === Quiz Save Request Started ===
+[2025-11-15 01:41:30] User logged in: 8
+[2025-11-15 01:41:30] Raw JSON: {"user_id":8,"book_id":4,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":6,"responses":[{"question_id":16,"user_answer":"A","is_correct":false},{"question_id":17,"user_answer":"C","is_correct":false},{"question_id":18,"user_answer":"C","is_correct":false},{"question_id":19,"user_answer":"C","is_correct":false},{"question_id":20,"user_answer":"C","is_correct":true}]}
+[2025-11-15 01:41:30] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 4
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 16
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 17
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 18
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 19
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 20
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:41:30] Extracted data - User: 8, Book: 4, Score: 1/5 (20%)
+[2025-11-15 01:41:30] Starting database operations...
+[2025-11-15 01:41:30] User verified: Ponpon Alarcon
+[2025-11-15 01:41:30] Book verified: The Lion, the Witch and the Wardrobe
+[2025-11-15 01:41:30] Attempting to insert quiz attempt...
+[2025-11-15 01:41:30] Quiz attempt inserted successfully! Attempt ID: 13
+[2025-11-15 01:41:30] System log created
+[2025-11-15 01:41:30] Books completed count: 1
+[2025-11-15 01:41:30] Average score: 36.9%
+[2025-11-15 01:41:30] Processing rewards...
+[2025-11-15 01:41:30] Total rewards: 0
+[2025-11-15 01:41:30] Response data: Array
+(
+    [attempt_id] => 13
+    [books_completed] => 1
+    [average_score] => 36.9
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Lion, the Witch and the Wardrobe
+    [passed] => 
+)
+
+[2025-11-15 01:41:30] === Quiz Save Successful ===
+[2025-11-15 01:41:45] === Quiz Save Request Started ===
+[2025-11-15 01:41:45] User logged in: 8
+[2025-11-15 01:41:45] Raw JSON: {"user_id":8,"book_id":4,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":13,"responses":[{"question_id":16,"user_answer":"A","is_correct":false},{"question_id":17,"user_answer":"B","is_correct":false},{"question_id":18,"user_answer":"A","is_correct":false},{"question_id":19,"user_answer":"B","is_correct":true},{"question_id":20,"user_answer":"A","is_correct":false}]}
+[2025-11-15 01:41:45] Quiz Data: Array
+(
+    [user_id] => 8
+    [book_id] => 4
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 13
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 16
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 17
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 18
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 19
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 20
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:41:45] Extracted data - User: 8, Book: 4, Score: 1/5 (20%)
+[2025-11-15 01:41:45] Starting database operations...
+[2025-11-15 01:41:45] User verified: Ponpon Alarcon
+[2025-11-15 01:41:45] Book verified: The Lion, the Witch and the Wardrobe
+[2025-11-15 01:41:45] Attempting to insert quiz attempt...
+[2025-11-15 01:41:45] Quiz attempt inserted successfully! Attempt ID: 14
+[2025-11-15 01:41:45] System log created
+[2025-11-15 01:41:45] Books completed count: 1
+[2025-11-15 01:41:45] Average score: 35.7%
+[2025-11-15 01:41:45] Processing rewards...
+[2025-11-15 01:41:45] Total rewards: 0
+[2025-11-15 01:41:45] Response data: Array
+(
+    [attempt_id] => 14
+    [books_completed] => 1
+    [average_score] => 35.7
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Ponpon Alarcon
+    [book_title] => The Lion, the Witch and the Wardrobe
+    [passed] => 
+)
+
+[2025-11-15 01:41:45] === Quiz Save Successful ===
+[2025-11-15 01:54:50] === Quiz Save Request Started ===
+[2025-11-15 01:54:50] User logged in: 1
+[2025-11-15 01:54:50] Raw JSON: {"user_id":1,"book_id":10,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":6,"responses":[{"question_id":46,"user_answer":"A","is_correct":true},{"question_id":47,"user_answer":"B","is_correct":false},{"question_id":48,"user_answer":"B","is_correct":false},{"question_id":49,"user_answer":"A","is_correct":false},{"question_id":50,"user_answer":"B","is_correct":true}]}
+[2025-11-15 01:54:50] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 10
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 46
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 47
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 48
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 49
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 50
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:54:50] Extracted data - User: 1, Book: 10, Score: 2/5 (40%)
+[2025-11-15 01:54:50] Starting database operations...
+[2025-11-15 01:54:50] User verified: Juan Dela Cruz
+[2025-11-15 01:54:50] Book verified: Wonder
+[2025-11-15 01:54:50] Attempting to insert quiz attempt...
+[2025-11-15 01:54:50] Quiz attempt inserted successfully! Attempt ID: 1
+[2025-11-15 01:54:50] System log created
+[2025-11-15 01:54:50] Books completed count: 0
+[2025-11-15 01:54:50] Average score: 40%
+[2025-11-15 01:54:50] Processing rewards...
+[2025-11-15 01:54:50] Total rewards: 0
+[2025-11-15 01:54:50] Response data: Array
+(
+    [attempt_id] => 1
+    [books_completed] => 0
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Wonder
+    [passed] => 
+)
+
+[2025-11-15 01:54:50] === Quiz Save Successful ===
+[2025-11-15 01:55:03] === Quiz Save Request Started ===
+[2025-11-15 01:55:03] User logged in: 1
+[2025-11-15 01:55:03] Raw JSON: {"user_id":1,"book_id":10,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":11,"responses":[{"question_id":46,"user_answer":"A","is_correct":true},{"question_id":47,"user_answer":"B","is_correct":false},{"question_id":48,"user_answer":"C","is_correct":false},{"question_id":49,"user_answer":"C","is_correct":false},{"question_id":50,"user_answer":"B","is_correct":true}]}
+[2025-11-15 01:55:03] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 10
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 11
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 46
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 47
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 48
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 49
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 50
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:55:03] Extracted data - User: 1, Book: 10, Score: 2/5 (40%)
+[2025-11-15 01:55:03] Starting database operations...
+[2025-11-15 01:55:03] User verified: Juan Dela Cruz
+[2025-11-15 01:55:03] Book verified: Wonder
+[2025-11-15 01:55:03] Attempting to insert quiz attempt...
+[2025-11-15 01:55:03] Quiz attempt inserted successfully! Attempt ID: 2
+[2025-11-15 01:55:03] System log created
+[2025-11-15 01:55:03] Books completed count: 0
+[2025-11-15 01:55:03] Average score: 40%
+[2025-11-15 01:55:03] Processing rewards...
+[2025-11-15 01:55:03] Total rewards: 0
+[2025-11-15 01:55:03] Response data: Array
+(
+    [attempt_id] => 2
+    [books_completed] => 0
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Wonder
+    [passed] => 
+)
+
+[2025-11-15 01:55:03] === Quiz Save Successful ===
+[2025-11-15 01:58:05] === Quiz Save Request Started ===
+[2025-11-15 01:58:05] User logged in: 1
+[2025-11-15 01:58:05] Raw JSON: {"user_id":1,"book_id":10,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":9,"responses":[{"question_id":46,"user_answer":"A","is_correct":true},{"question_id":47,"user_answer":"B","is_correct":false},{"question_id":48,"user_answer":"C","is_correct":false},{"question_id":49,"user_answer":"C","is_correct":false},{"question_id":50,"user_answer":"B","is_correct":true}]}
+[2025-11-15 01:58:05] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 10
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 9
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 46
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 47
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 48
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 49
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 50
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 01:58:05] Extracted data - User: 1, Book: 10, Score: 2/5 (40%)
+[2025-11-15 01:58:05] Starting database operations...
+[2025-11-15 01:58:05] Transaction started
+[2025-11-15 01:58:05] User verified: Juan Dela Cruz
+[2025-11-15 01:58:05] Book verified: Wonder
+[2025-11-15 01:58:05] Attempting to insert quiz attempt...
+[2025-11-15 01:58:05] Quiz attempt inserted successfully! Attempt ID: 3
+[2025-11-15 01:58:05] System log created
+[2025-11-15 01:58:05] Books completed count (score >= 70%): 0
+[2025-11-15 01:58:05] Average score: 40%
+[2025-11-15 01:58:05] Processing rewards based on 0 books completed...
+[2025-11-15 01:58:05] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 01:58:05] Not enough books for reward: Pen Reward
+[2025-11-15 01:58:05] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 01:58:05] Not enough books for reward: Notebook Reward
+[2025-11-15 01:58:05] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 01:58:05] Not enough books for reward: Drawing Materials
+[2025-11-15 01:58:05] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 01:58:05] Not enough books for reward: School Supplies Bundle
+[2025-11-15 01:58:05] Total rewards earned: 0
+[2025-11-15 01:58:05] ✅ Transaction committed successfully
+[2025-11-15 01:58:05] Response data: Array
+(
+    [attempt_id] => 3
+    [books_completed] => 0
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Wonder
+    [passed] => 
+)
+
+[2025-11-15 01:58:05] === Quiz Save Successful ===
+[2025-11-15 01:58:59] === Quiz Save Request Started ===
+[2025-11-15 01:58:59] User logged in: 1
+[2025-11-15 01:58:59] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":8,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"A","is_correct":false},{"question_id":3,"user_answer":"A","is_correct":false},{"question_id":4,"user_answer":"A","is_correct":false},{"question_id":5,"user_answer":"A","is_correct":false}]}
+[2025-11-15 01:58:59] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 8
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 01:58:59] Extracted data - User: 1, Book: 1, Score: 1/5 (20%)
+[2025-11-15 01:58:59] Starting database operations...
+[2025-11-15 01:58:59] Transaction started
+[2025-11-15 01:58:59] User verified: Juan Dela Cruz
+[2025-11-15 01:58:59] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 01:58:59] Attempting to insert quiz attempt...
+[2025-11-15 01:58:59] Quiz attempt inserted successfully! Attempt ID: 4
+[2025-11-15 01:58:59] System log created
+[2025-11-15 01:58:59] Books completed count (score >= 70%): 0
+[2025-11-15 01:58:59] Average score: 35%
+[2025-11-15 01:58:59] Processing rewards based on 0 books completed...
+[2025-11-15 01:58:59] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 01:58:59] Not enough books for reward: Pen Reward
+[2025-11-15 01:58:59] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 01:58:59] Not enough books for reward: Notebook Reward
+[2025-11-15 01:58:59] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 01:58:59] Not enough books for reward: Drawing Materials
+[2025-11-15 01:58:59] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 01:58:59] Not enough books for reward: School Supplies Bundle
+[2025-11-15 01:58:59] Total rewards earned: 0
+[2025-11-15 01:58:59] ✅ Transaction committed successfully
+[2025-11-15 01:58:59] Response data: Array
+(
+    [attempt_id] => 4
+    [books_completed] => 0
+    [average_score] => 35
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 01:58:59] === Quiz Save Successful ===
+[2025-11-15 02:01:49] === Quiz Save Request Started ===
+[2025-11-15 02:01:49] User logged in: 1
+[2025-11-15 02:01:49] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":6,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"B","is_correct":true},{"question_id":3,"user_answer":"C","is_correct":true},{"question_id":4,"user_answer":"C","is_correct":false},{"question_id":5,"user_answer":"B","is_correct":false}]}
+[2025-11-15 02:01:49] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:01:49] Extracted data - User: 1, Book: 1, Score: 3/5 (60%)
+[2025-11-15 02:01:49] Starting database operations...
+[2025-11-15 02:01:49] Transaction started
+[2025-11-15 02:01:49] User verified: Juan Dela Cruz
+[2025-11-15 02:01:49] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 02:01:49] Attempting to insert quiz attempt...
+[2025-11-15 02:01:49] Quiz attempt inserted successfully! Attempt ID: 5
+[2025-11-15 02:01:49] System log created
+[2025-11-15 02:01:49] Books completed count (score >= 70%): 0
+[2025-11-15 02:01:49] Average score: 40%
+[2025-11-15 02:01:49] Processing rewards based on 0 books completed...
+[2025-11-15 02:01:49] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:01:49] Not enough books for reward: Pen Reward
+[2025-11-15 02:01:49] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:01:49] Not enough books for reward: Notebook Reward
+[2025-11-15 02:01:49] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:01:49] Not enough books for reward: Drawing Materials
+[2025-11-15 02:01:49] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:01:49] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:01:49] Total rewards earned: 0
+[2025-11-15 02:01:49] ✅ Transaction committed successfully
+[2025-11-15 02:01:49] Response data: Array
+(
+    [attempt_id] => 5
+    [books_completed] => 0
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 02:01:49] === Quiz Save Successful ===
+[2025-11-15 02:03:59] === Quiz Save Request Started ===
+[2025-11-15 02:03:59] User logged in: 1
+[2025-11-15 02:03:59] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":4,"responses":[{"question_id":1,"user_answer":"C","is_correct":false},{"question_id":2,"user_answer":"C","is_correct":false},{"question_id":3,"user_answer":"C","is_correct":true},{"question_id":4,"user_answer":"C","is_correct":false},{"question_id":5,"user_answer":"B","is_correct":false}]}
+[2025-11-15 02:03:59] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 4
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:03:59] Extracted data - User: 1, Book: 1, Score: 1/5 (20%)
+[2025-11-15 02:03:59] Starting database operations...
+[2025-11-15 02:03:59] Transaction started
+[2025-11-15 02:03:59] User verified: Juan Dela Cruz
+[2025-11-15 02:03:59] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 02:03:59] Attempting to insert quiz attempt...
+[2025-11-15 02:03:59] Quiz attempt inserted successfully! Attempt ID: 6
+[2025-11-15 02:03:59] System log created
+[2025-11-15 02:03:59] Books completed count (score >= 70%): 0
+[2025-11-15 02:03:59] Average score: 36.7%
+[2025-11-15 02:03:59] Processing rewards based on 0 books completed...
+[2025-11-15 02:03:59] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:03:59] Not enough books for reward: Pen Reward
+[2025-11-15 02:03:59] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:03:59] Not enough books for reward: Notebook Reward
+[2025-11-15 02:03:59] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:03:59] Not enough books for reward: Drawing Materials
+[2025-11-15 02:03:59] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:03:59] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:03:59] Total rewards earned: 0
+[2025-11-15 02:03:59] ✅ Transaction committed successfully
+[2025-11-15 02:03:59] Response data: Array
+(
+    [attempt_id] => 6
+    [books_completed] => 0
+    [average_score] => 36.7
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 02:03:59] === Quiz Save Successful ===
+[2025-11-15 02:04:31] === Quiz Save Request Started ===
+[2025-11-15 02:04:31] User logged in: 1
+[2025-11-15 02:04:31] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":27,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"C","is_correct":false},{"question_id":3,"user_answer":"C","is_correct":true},{"question_id":4,"user_answer":"A","is_correct":false},{"question_id":5,"user_answer":"B","is_correct":false}]}
+[2025-11-15 02:04:31] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 27
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:04:31] Extracted data - User: 1, Book: 1, Score: 2/5 (40%)
+[2025-11-15 02:04:31] Starting database operations...
+[2025-11-15 02:04:31] Transaction started
+[2025-11-15 02:04:31] User verified: Juan Dela Cruz
+[2025-11-15 02:04:31] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 02:04:31] Attempting to insert quiz attempt...
+[2025-11-15 02:04:31] Quiz attempt inserted successfully! Attempt ID: 7
+[2025-11-15 02:04:31] System log created
+[2025-11-15 02:04:31] Books completed count (score >= 70%): 0
+[2025-11-15 02:04:31] Average score: 37.1%
+[2025-11-15 02:04:31] Processing rewards based on 0 books completed...
+[2025-11-15 02:04:31] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:04:31] Not enough books for reward: Pen Reward
+[2025-11-15 02:04:31] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:04:31] Not enough books for reward: Notebook Reward
+[2025-11-15 02:04:31] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:04:31] Not enough books for reward: Drawing Materials
+[2025-11-15 02:04:31] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:04:31] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:04:31] Total rewards earned: 0
+[2025-11-15 02:04:31] ✅ Transaction committed successfully
+[2025-11-15 02:04:31] Response data: Array
+(
+    [attempt_id] => 7
+    [books_completed] => 0
+    [average_score] => 37.1
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+)
+
+[2025-11-15 02:04:31] === Quiz Save Successful ===
+[2025-11-15 02:06:15] === Quiz Save Request Started ===
+[2025-11-15 02:06:15] User logged in: 1
+[2025-11-15 02:06:15] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":4,"score_percentage":80,"time_taken":15,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"B","is_correct":true},{"question_id":3,"user_answer":"C","is_correct":true},{"question_id":4,"user_answer":"B","is_correct":true},{"question_id":5,"user_answer":"B","is_correct":false}]}
+[2025-11-15 02:06:15] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 4
+    [score_percentage] => 80
+    [time_taken] => 15
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:06:15] Extracted data - User: 1, Book: 1, Score: 4/5 (80%)
+[2025-11-15 02:06:15] Starting database operations...
+[2025-11-15 02:06:15] Transaction started
+[2025-11-15 02:06:15] User verified: Juan Dela Cruz
+[2025-11-15 02:06:15] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 02:06:15] Attempting to insert quiz attempt...
+[2025-11-15 02:06:15] Quiz attempt inserted successfully! Attempt ID: 8
+[2025-11-15 02:06:15] System log created
+[2025-11-15 02:06:15] Books completed count (score >= 70%): 1
+[2025-11-15 02:06:15] Average score: 42.5%
+[2025-11-15 02:06:15] Processing rewards based on 1 books completed...
+[2025-11-15 02:06:15] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:06:15] Not enough books for reward: Pen Reward
+[2025-11-15 02:06:15] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:06:15] Not enough books for reward: Notebook Reward
+[2025-11-15 02:06:15] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:06:15] Not enough books for reward: Drawing Materials
+[2025-11-15 02:06:15] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:06:15] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:06:15] Total rewards earned: 0
+[2025-11-15 02:06:15] ✅ Transaction committed successfully
+[2025-11-15 02:06:15] Response data: Array
+(
+    [attempt_id] => 8
+    [books_completed] => 1
+    [average_score] => 42.5
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 1
+)
+
+[2025-11-15 02:06:15] === Quiz Save Successful ===
+[2025-11-15 02:06:45] === Quiz Save Request Started ===
+[2025-11-15 02:06:45] User logged in: 1
+[2025-11-15 02:06:45] Raw JSON: {"user_id":1,"book_id":2,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":5,"responses":[{"question_id":6,"user_answer":"B","is_correct":false},{"question_id":7,"user_answer":"B","is_correct":true},{"question_id":8,"user_answer":"C","is_correct":false},{"question_id":9,"user_answer":"B","is_correct":true},{"question_id":10,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:06:45] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 5
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:06:45] Extracted data - User: 1, Book: 2, Score: 3/5 (60%)
+[2025-11-15 02:06:45] Starting database operations...
+[2025-11-15 02:06:45] Transaction started
+[2025-11-15 02:06:45] User verified: Juan Dela Cruz
+[2025-11-15 02:06:45] Book verified: Charlotte's Web
+[2025-11-15 02:06:45] Attempting to insert quiz attempt...
+[2025-11-15 02:06:45] Quiz attempt inserted successfully! Attempt ID: 9
+[2025-11-15 02:06:45] System log created
+[2025-11-15 02:06:45] Books completed count (score >= 70%): 1
+[2025-11-15 02:06:45] Average score: 44.4%
+[2025-11-15 02:06:45] Processing rewards based on 1 books completed...
+[2025-11-15 02:06:45] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:06:45] Not enough books for reward: Pen Reward
+[2025-11-15 02:06:45] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:06:45] Not enough books for reward: Notebook Reward
+[2025-11-15 02:06:45] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:06:45] Not enough books for reward: Drawing Materials
+[2025-11-15 02:06:45] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:06:45] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:06:45] Total rewards earned: 0
+[2025-11-15 02:06:45] ✅ Transaction committed successfully
+[2025-11-15 02:06:45] Response data: Array
+(
+    [attempt_id] => 9
+    [books_completed] => 1
+    [average_score] => 44.4
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Charlotte's Web
+    [passed] => 
+)
+
+[2025-11-15 02:06:45] === Quiz Save Successful ===
+[2025-11-15 02:07:19] === Quiz Save Request Started ===
+[2025-11-15 02:07:19] User logged in: 1
+[2025-11-15 02:07:19] Raw JSON: {"user_id":1,"book_id":10,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":46,"user_answer":"B","is_correct":false},{"question_id":47,"user_answer":"C","is_correct":false},{"question_id":48,"user_answer":"C","is_correct":false},{"question_id":49,"user_answer":"C","is_correct":false},{"question_id":50,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:07:19] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 10
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 46
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 47
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 48
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 49
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 50
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:07:19] Extracted data - User: 1, Book: 10, Score: 1/5 (20%)
+[2025-11-15 02:07:19] Starting database operations...
+[2025-11-15 02:07:19] Transaction started
+[2025-11-15 02:07:19] User verified: Juan Dela Cruz
+[2025-11-15 02:07:19] Book verified: Wonder
+[2025-11-15 02:07:19] Attempting to insert quiz attempt...
+[2025-11-15 02:07:19] Quiz attempt inserted successfully! Attempt ID: 10
+[2025-11-15 02:07:19] System log created
+[2025-11-15 02:07:19] Books completed count (score >= 70%): 1
+[2025-11-15 02:07:19] Average score: 42%
+[2025-11-15 02:07:19] Processing rewards based on 1 books completed...
+[2025-11-15 02:07:19] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:07:19] Not enough books for reward: Pen Reward
+[2025-11-15 02:07:19] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:07:19] Not enough books for reward: Notebook Reward
+[2025-11-15 02:07:19] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:07:19] Not enough books for reward: Drawing Materials
+[2025-11-15 02:07:19] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:07:19] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:07:19] Total rewards earned: 0
+[2025-11-15 02:07:19] ✅ Transaction committed successfully
+[2025-11-15 02:07:19] Response data: Array
+(
+    [attempt_id] => 10
+    [books_completed] => 1
+    [average_score] => 42
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Wonder
+    [passed] => 
+)
+
+[2025-11-15 02:07:19] === Quiz Save Successful ===
+[2025-11-15 02:11:02] === Quiz Save Request Started ===
+[2025-11-15 02:11:02] User logged in: 1
+[2025-11-15 02:11:02] Raw JSON: {"user_id":1,"book_id":10,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":12,"responses":[{"question_id":46,"user_answer":"A","is_correct":true},{"question_id":47,"user_answer":"A","is_correct":true},{"question_id":48,"user_answer":"A","is_correct":true},{"question_id":49,"user_answer":"A","is_correct":false},{"question_id":50,"user_answer":"A","is_correct":false}]}
+[2025-11-15 02:11:02] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 10
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 12
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 46
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 47
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 48
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 49
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 50
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:11:02] Extracted data - User: 1, Book: 10, Score: 3/5 (60%)
+[2025-11-15 02:11:02] Starting database operations...
+[2025-11-15 02:11:02] Transaction started
+[2025-11-15 02:11:02] User verified: Juan Dela Cruz
+[2025-11-15 02:11:02] Book verified: Wonder
+[2025-11-15 02:11:02] Attempting to insert quiz attempt...
+[2025-11-15 02:11:02] Quiz attempt inserted successfully! Attempt ID: 11
+[2025-11-15 02:11:03] System log created
+[2025-11-15 02:11:03] Is re-attempt: YES (Previous attempts: 5)
+[2025-11-15 02:11:03] Books completed count (any attempt): 3
+[2025-11-15 02:11:03] Average score: 43.6%
+[2025-11-15 02:11:03] Processing rewards based on 3 books completed...
+[2025-11-15 02:11:03] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:11:03] Not enough books for reward: Pen Reward
+[2025-11-15 02:11:03] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:11:03] Not enough books for reward: Notebook Reward
+[2025-11-15 02:11:03] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:11:03] Not enough books for reward: Drawing Materials
+[2025-11-15 02:11:03] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:11:03] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:11:03] Total rewards earned: 0
+[2025-11-15 02:11:03] ✅ Transaction committed successfully
+[2025-11-15 02:11:03] Response data: Array
+(
+    [attempt_id] => 11
+    [books_completed] => 3
+    [average_score] => 43.6
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Wonder
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:11:03] === Quiz Save Successful ===
+[2025-11-15 02:13:25] === Quiz Save Request Started ===
+[2025-11-15 02:13:25] User logged in: 1
+[2025-11-15 02:13:25] Raw JSON: {"user_id":1,"book_id":1,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":1,"user_answer":"A","is_correct":true},{"question_id":2,"user_answer":"A","is_correct":false},{"question_id":3,"user_answer":"A","is_correct":false},{"question_id":4,"user_answer":"A","is_correct":false},{"question_id":5,"user_answer":"A","is_correct":false}]}
+[2025-11-15 02:13:25] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 1
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 1
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 2
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 3
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 4
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 5
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:13:25] Extracted data - User: 1, Book: 1, Score: 1/5 (20%)
+[2025-11-15 02:13:25] Starting database operations...
+[2025-11-15 02:13:25] Transaction started
+[2025-11-15 02:13:25] User verified: Juan Dela Cruz
+[2025-11-15 02:13:25] Book verified: The Adventures of Tom Sawyer
+[2025-11-15 02:13:25] Attempting to insert quiz attempt...
+[2025-11-15 02:13:25] Quiz attempt inserted successfully! Attempt ID: 12
+[2025-11-15 02:13:25] System log created
+[2025-11-15 02:13:25] Is re-attempt: YES (Previous attempts: 6)
+[2025-11-15 02:13:25] Books completed count (any attempt): 3
+[2025-11-15 02:13:25] Average score: 41.7%
+[2025-11-15 02:13:25] Processing rewards based on 3 books completed...
+[2025-11-15 02:13:25] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:13:25] Not enough books for reward: Pen Reward
+[2025-11-15 02:13:25] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:13:25] Not enough books for reward: Notebook Reward
+[2025-11-15 02:13:25] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:13:25] Not enough books for reward: Drawing Materials
+[2025-11-15 02:13:25] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:13:25] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:13:25] Total rewards earned: 0
+[2025-11-15 02:13:25] ✅ Transaction committed successfully
+[2025-11-15 02:13:25] Response data: Array
+(
+    [attempt_id] => 12
+    [books_completed] => 3
+    [average_score] => 41.7
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Adventures of Tom Sawyer
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:13:25] === Quiz Save Successful ===
+[2025-11-15 02:13:51] === Quiz Save Request Started ===
+[2025-11-15 02:13:51] User logged in: 1
+[2025-11-15 02:13:51] Raw JSON: {"user_id":1,"book_id":2,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":7,"responses":[{"question_id":6,"user_answer":"A","is_correct":true},{"question_id":7,"user_answer":"A","is_correct":false},{"question_id":8,"user_answer":"A","is_correct":false},{"question_id":9,"user_answer":"A","is_correct":false},{"question_id":10,"user_answer":"A","is_correct":false}]}
+[2025-11-15 02:13:51] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 2
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 6
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 7
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 8
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 9
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 10
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:13:51] Extracted data - User: 1, Book: 2, Score: 1/5 (20%)
+[2025-11-15 02:13:51] Starting database operations...
+[2025-11-15 02:13:51] Transaction started
+[2025-11-15 02:13:51] User verified: Juan Dela Cruz
+[2025-11-15 02:13:51] Book verified: Charlotte's Web
+[2025-11-15 02:13:51] Attempting to insert quiz attempt...
+[2025-11-15 02:13:51] Quiz attempt inserted successfully! Attempt ID: 13
+[2025-11-15 02:13:51] System log created
+[2025-11-15 02:13:51] Is re-attempt: YES (Previous attempts: 2)
+[2025-11-15 02:13:51] Books completed count (any attempt): 3
+[2025-11-15 02:13:51] Average score: 40%
+[2025-11-15 02:13:51] Processing rewards based on 3 books completed...
+[2025-11-15 02:13:51] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:13:51] Not enough books for reward: Pen Reward
+[2025-11-15 02:13:51] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:13:51] Not enough books for reward: Notebook Reward
+[2025-11-15 02:13:51] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:13:51] Not enough books for reward: Drawing Materials
+[2025-11-15 02:13:51] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:13:51] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:13:51] Total rewards earned: 0
+[2025-11-15 02:13:51] ✅ Transaction committed successfully
+[2025-11-15 02:13:51] Response data: Array
+(
+    [attempt_id] => 13
+    [books_completed] => 3
+    [average_score] => 40
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Charlotte's Web
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:13:51] === Quiz Save Successful ===
+[2025-11-15 02:14:12] === Quiz Save Request Started ===
+[2025-11-15 02:14:12] User logged in: 1
+[2025-11-15 02:14:12] Raw JSON: {"user_id":1,"book_id":3,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":6,"responses":[{"question_id":11,"user_answer":"A","is_correct":true},{"question_id":12,"user_answer":"A","is_correct":false},{"question_id":13,"user_answer":"A","is_correct":false},{"question_id":14,"user_answer":"A","is_correct":false},{"question_id":15,"user_answer":"A","is_correct":false}]}
+[2025-11-15 02:14:12] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 3
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 11
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 12
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 13
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 14
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 15
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:14:12] Extracted data - User: 1, Book: 3, Score: 1/5 (20%)
+[2025-11-15 02:14:12] Starting database operations...
+[2025-11-15 02:14:12] Transaction started
+[2025-11-15 02:14:12] User verified: Juan Dela Cruz
+[2025-11-15 02:14:12] Book verified: Where the Red Fern Grows
+[2025-11-15 02:14:12] Attempting to insert quiz attempt...
+[2025-11-15 02:14:12] Quiz attempt inserted successfully! Attempt ID: 14
+[2025-11-15 02:14:12] System log created
+[2025-11-15 02:14:12] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:14:12] Books completed count (any attempt): 4
+[2025-11-15 02:14:12] Average score: 38.6%
+[2025-11-15 02:14:12] Processing rewards based on 4 books completed...
+[2025-11-15 02:14:12] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:14:12] Not enough books for reward: Pen Reward
+[2025-11-15 02:14:12] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:14:12] Not enough books for reward: Notebook Reward
+[2025-11-15 02:14:12] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:14:12] Not enough books for reward: Drawing Materials
+[2025-11-15 02:14:12] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:14:12] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:14:12] Total rewards earned: 0
+[2025-11-15 02:14:12] ✅ Transaction committed successfully
+[2025-11-15 02:14:12] Response data: Array
+(
+    [attempt_id] => 14
+    [books_completed] => 4
+    [average_score] => 38.6
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Where the Red Fern Grows
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:14:12] === Quiz Save Successful ===
+[2025-11-15 02:14:40] === Quiz Save Request Started ===
+[2025-11-15 02:14:40] User logged in: 1
+[2025-11-15 02:14:40] Raw JSON: {"user_id":1,"book_id":4,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":6,"responses":[{"question_id":16,"user_answer":"A","is_correct":false},{"question_id":17,"user_answer":"B","is_correct":false},{"question_id":18,"user_answer":"B","is_correct":false},{"question_id":19,"user_answer":"C","is_correct":false},{"question_id":20,"user_answer":"C","is_correct":true}]}
+[2025-11-15 02:14:40] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 4
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 16
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 17
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 18
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 19
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 20
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:14:40] Extracted data - User: 1, Book: 4, Score: 1/5 (20%)
+[2025-11-15 02:14:40] Starting database operations...
+[2025-11-15 02:14:40] Transaction started
+[2025-11-15 02:14:40] User verified: Juan Dela Cruz
+[2025-11-15 02:14:40] Book verified: The Lion, the Witch and the Wardrobe
+[2025-11-15 02:14:40] Attempting to insert quiz attempt...
+[2025-11-15 02:14:40] Quiz attempt inserted successfully! Attempt ID: 15
+[2025-11-15 02:14:40] System log created
+[2025-11-15 02:14:40] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:14:40] Books completed count (any attempt): 5
+[2025-11-15 02:14:40] Average score: 37.3%
+[2025-11-15 02:14:40] Processing rewards based on 5 books completed...
+[2025-11-15 02:14:40] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:14:40] Not enough books for reward: Pen Reward
+[2025-11-15 02:14:40] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:14:40] Not enough books for reward: Notebook Reward
+[2025-11-15 02:14:40] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:14:40] Not enough books for reward: Drawing Materials
+[2025-11-15 02:14:40] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:14:40] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:14:40] Total rewards earned: 0
+[2025-11-15 02:14:40] ✅ Transaction committed successfully
+[2025-11-15 02:14:40] Response data: Array
+(
+    [attempt_id] => 15
+    [books_completed] => 5
+    [average_score] => 37.3
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Lion, the Witch and the Wardrobe
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:14:40] === Quiz Save Successful ===
+[2025-11-15 02:15:10] === Quiz Save Request Started ===
+[2025-11-15 02:15:10] User logged in: 1
+[2025-11-15 02:15:10] Raw JSON: {"user_id":1,"book_id":5,"total_questions":5,"correct_answers":0,"score_percentage":0,"time_taken":7,"responses":[{"question_id":21,"user_answer":"A","is_correct":false},{"question_id":22,"user_answer":"A","is_correct":false},{"question_id":23,"user_answer":"A","is_correct":false},{"question_id":24,"user_answer":"D","is_correct":false},{"question_id":25,"user_answer":"C","is_correct":false}]}
+[2025-11-15 02:15:10] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 5
+    [total_questions] => 5
+    [correct_answers] => 0
+    [score_percentage] => 0
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 21
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 22
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 23
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 24
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 25
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:15:10] Extracted data - User: 1, Book: 5, Score: 0/5 (0%)
+[2025-11-15 02:15:10] Starting database operations...
+[2025-11-15 02:15:10] Transaction started
+[2025-11-15 02:15:10] User verified: Juan Dela Cruz
+[2025-11-15 02:15:10] Book verified: Bridge to Terabithia
+[2025-11-15 02:15:10] Attempting to insert quiz attempt...
+[2025-11-15 02:15:10] Quiz attempt inserted successfully! Attempt ID: 16
+[2025-11-15 02:15:10] System log created
+[2025-11-15 02:15:10] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:15:10] Books completed count (any attempt): 6
+[2025-11-15 02:15:10] Average score: 35%
+[2025-11-15 02:15:10] Processing rewards based on 6 books completed...
+[2025-11-15 02:15:10] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:15:10] Not enough books for reward: Pen Reward
+[2025-11-15 02:15:10] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:15:10] Not enough books for reward: Notebook Reward
+[2025-11-15 02:15:10] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:15:10] Not enough books for reward: Drawing Materials
+[2025-11-15 02:15:10] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:15:10] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:15:10] Total rewards earned: 0
+[2025-11-15 02:15:10] ✅ Transaction committed successfully
+[2025-11-15 02:15:10] Response data: Array
+(
+    [attempt_id] => 16
+    [books_completed] => 6
+    [average_score] => 35
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Bridge to Terabithia
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:15:10] === Quiz Save Successful ===
+[2025-11-15 02:15:37] === Quiz Save Request Started ===
+[2025-11-15 02:15:37] User logged in: 1
+[2025-11-15 02:15:37] Raw JSON: {"user_id":1,"book_id":6,"total_questions":5,"correct_answers":1,"score_percentage":20,"time_taken":5,"responses":[{"question_id":26,"user_answer":"A","is_correct":false},{"question_id":27,"user_answer":"B","is_correct":false},{"question_id":28,"user_answer":"B","is_correct":false},{"question_id":29,"user_answer":"B","is_correct":false},{"question_id":30,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:15:37] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 6
+    [total_questions] => 5
+    [correct_answers] => 1
+    [score_percentage] => 20
+    [time_taken] => 5
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 26
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 27
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 28
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 29
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 30
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:15:37] Extracted data - User: 1, Book: 6, Score: 1/5 (20%)
+[2025-11-15 02:15:37] Starting database operations...
+[2025-11-15 02:15:37] Transaction started
+[2025-11-15 02:15:37] User verified: Juan Dela Cruz
+[2025-11-15 02:15:37] Book verified: Harry Potter and the Sorcerer's Stone
+[2025-11-15 02:15:37] Attempting to insert quiz attempt...
+[2025-11-15 02:15:37] Quiz attempt inserted successfully! Attempt ID: 17
+[2025-11-15 02:15:37] System log created
+[2025-11-15 02:15:37] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:15:37] Books completed count (any attempt): 7
+[2025-11-15 02:15:37] Average score: 34.1%
+[2025-11-15 02:15:37] Processing rewards based on 7 books completed...
+[2025-11-15 02:15:37] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:15:37] Not enough books for reward: Pen Reward
+[2025-11-15 02:15:37] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:15:37] Not enough books for reward: Notebook Reward
+[2025-11-15 02:15:37] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:15:37] Not enough books for reward: Drawing Materials
+[2025-11-15 02:15:37] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:15:37] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:15:37] Total rewards earned: 0
+[2025-11-15 02:15:37] ✅ Transaction committed successfully
+[2025-11-15 02:15:37] Response data: Array
+(
+    [attempt_id] => 17
+    [books_completed] => 7
+    [average_score] => 34.1
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Harry Potter and the Sorcerer's Stone
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:15:37] === Quiz Save Successful ===
+[2025-11-15 02:16:01] === Quiz Save Request Started ===
+[2025-11-15 02:16:01] User logged in: 1
+[2025-11-15 02:16:01] Raw JSON: {"user_id":1,"book_id":7,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":6,"responses":[{"question_id":31,"user_answer":"A","is_correct":true},{"question_id":32,"user_answer":"B","is_correct":true},{"question_id":33,"user_answer":"B","is_correct":false},{"question_id":34,"user_answer":"B","is_correct":true},{"question_id":35,"user_answer":"B","is_correct":false}]}
+[2025-11-15 02:16:01] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 7
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 6
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 31
+                    [user_answer] => A
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 32
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 33
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 34
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 35
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+        )
+
+)
+
+[2025-11-15 02:16:01] Extracted data - User: 1, Book: 7, Score: 3/5 (60%)
+[2025-11-15 02:16:01] Starting database operations...
+[2025-11-15 02:16:01] Transaction started
+[2025-11-15 02:16:01] User verified: Juan Dela Cruz
+[2025-11-15 02:16:01] Book verified: The Secret Garden
+[2025-11-15 02:16:01] Attempting to insert quiz attempt...
+[2025-11-15 02:16:01] Quiz attempt inserted successfully! Attempt ID: 18
+[2025-11-15 02:16:01] System log created
+[2025-11-15 02:16:01] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:16:01] Books completed count (any attempt): 8
+[2025-11-15 02:16:01] Average score: 35.6%
+[2025-11-15 02:16:01] Processing rewards based on 8 books completed...
+[2025-11-15 02:16:01] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:16:01] Not enough books for reward: Pen Reward
+[2025-11-15 02:16:01] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:16:01] Not enough books for reward: Notebook Reward
+[2025-11-15 02:16:01] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:16:01] Not enough books for reward: Drawing Materials
+[2025-11-15 02:16:01] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:16:01] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:16:01] Total rewards earned: 0
+[2025-11-15 02:16:01] ✅ Transaction committed successfully
+[2025-11-15 02:16:01] Response data: Array
+(
+    [attempt_id] => 18
+    [books_completed] => 8
+    [average_score] => 35.6
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Secret Garden
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:16:01] === Quiz Save Successful ===
+[2025-11-15 02:16:22] === Quiz Save Request Started ===
+[2025-11-15 02:16:22] User logged in: 1
+[2025-11-15 02:16:22] Raw JSON: {"user_id":1,"book_id":8,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":9,"responses":[{"question_id":36,"user_answer":"A","is_correct":false},{"question_id":37,"user_answer":"D","is_correct":false},{"question_id":38,"user_answer":"C","is_correct":false},{"question_id":39,"user_answer":"B","is_correct":true},{"question_id":40,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:16:22] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 8
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 9
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 36
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 37
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 38
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 39
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 40
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:16:22] Extracted data - User: 1, Book: 8, Score: 2/5 (40%)
+[2025-11-15 02:16:22] Starting database operations...
+[2025-11-15 02:16:22] Transaction started
+[2025-11-15 02:16:22] User verified: Juan Dela Cruz
+[2025-11-15 02:16:22] Book verified: Matilda
+[2025-11-15 02:16:22] Attempting to insert quiz attempt...
+[2025-11-15 02:16:22] Quiz attempt inserted successfully! Attempt ID: 19
+[2025-11-15 02:16:22] System log created
+[2025-11-15 02:16:22] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:16:22] Books completed count (any attempt): 9
+[2025-11-15 02:16:22] Average score: 35.8%
+[2025-11-15 02:16:22] Processing rewards based on 9 books completed...
+[2025-11-15 02:16:22] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:16:22] Not enough books for reward: Pen Reward
+[2025-11-15 02:16:22] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:16:22] Not enough books for reward: Notebook Reward
+[2025-11-15 02:16:22] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:16:22] Not enough books for reward: Drawing Materials
+[2025-11-15 02:16:22] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:16:22] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:16:22] Total rewards earned: 0
+[2025-11-15 02:16:22] ✅ Transaction committed successfully
+[2025-11-15 02:16:22] Response data: Array
+(
+    [attempt_id] => 19
+    [books_completed] => 9
+    [average_score] => 35.8
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Matilda
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:16:22] === Quiz Save Successful ===
+[2025-11-15 02:16:39] === Quiz Save Request Started ===
+[2025-11-15 02:16:39] User logged in: 1
+[2025-11-15 02:16:39] Raw JSON: {"user_id":1,"book_id":9,"total_questions":5,"correct_answers":2,"score_percentage":40,"time_taken":7,"responses":[{"question_id":41,"user_answer":"A","is_correct":false},{"question_id":42,"user_answer":"B","is_correct":false},{"question_id":43,"user_answer":"B","is_correct":false},{"question_id":44,"user_answer":"C","is_correct":true},{"question_id":45,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:16:39] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 9
+    [total_questions] => 5
+    [correct_answers] => 2
+    [score_percentage] => 40
+    [time_taken] => 7
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 41
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 42
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 43
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 44
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 45
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:16:39] Extracted data - User: 1, Book: 9, Score: 2/5 (40%)
+[2025-11-15 02:16:39] Starting database operations...
+[2025-11-15 02:16:39] Transaction started
+[2025-11-15 02:16:39] User verified: Juan Dela Cruz
+[2025-11-15 02:16:39] Book verified: Percy Jackson: The Lightning Thief
+[2025-11-15 02:16:39] Attempting to insert quiz attempt...
+[2025-11-15 02:16:39] Quiz attempt inserted successfully! Attempt ID: 20
+[2025-11-15 02:16:39] System log created
+[2025-11-15 02:16:39] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:16:39] Books completed count (any attempt): 10
+[2025-11-15 02:16:39] Average score: 36%
+[2025-11-15 02:16:39] Processing rewards based on 10 books completed...
+[2025-11-15 02:16:39] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:16:39] ✅ New reward awarded: Pen Reward
+[2025-11-15 02:16:39] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:16:39] Not enough books for reward: Notebook Reward
+[2025-11-15 02:16:39] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:16:39] Not enough books for reward: Drawing Materials
+[2025-11-15 02:16:39] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:16:39] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:16:39] Total rewards earned: 1
+[2025-11-15 02:16:39] ✅ Transaction committed successfully
+[2025-11-15 02:16:39] Response data: Array
+(
+    [attempt_id] => 20
+    [books_completed] => 10
+    [average_score] => 36
+    [rewards_earned] => 1
+    [new_rewards] => Array
+        (
+            [0] => Pen Reward
+        )
+
+    [all_rewards] => Array
+        (
+            [0] => Pen Reward
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Percy Jackson: The Lightning Thief
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:16:39] === Quiz Save Successful ===
+[2025-11-15 02:52:05] === Quiz Save Request Started ===
+[2025-11-15 02:52:05] User logged in: 1
+[2025-11-15 02:52:05] Raw JSON: {"user_id":1,"book_id":17,"total_questions":1,"correct_answers":1,"score_percentage":100,"time_taken":4,"responses":[{"question_id":52,"user_answer":"B","is_correct":true}]}
+[2025-11-15 02:52:05] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 17
+    [total_questions] => 1
+    [correct_answers] => 1
+    [score_percentage] => 100
+    [time_taken] => 4
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 52
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 02:52:05] Extracted data - User: 1, Book: 17, Score: 1/1 (100%)
+[2025-11-15 02:52:05] Starting database operations...
+[2025-11-15 02:52:05] Transaction started
+[2025-11-15 02:52:05] User verified: Juan Dela Cruz
+[2025-11-15 02:52:05] Book verified: The Ugly Duckling
+[2025-11-15 02:52:05] Attempting to insert quiz attempt...
+[2025-11-15 02:52:05] Quiz attempt inserted successfully! Attempt ID: 21
+[2025-11-15 02:52:05] System log created
+[2025-11-15 02:52:05] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 02:52:05] Books completed count (any attempt): 11
+[2025-11-15 02:52:05] Average score: 39%
+[2025-11-15 02:52:05] Processing rewards based on 11 books completed...
+[2025-11-15 02:52:05] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 02:52:05] User already has reward: Pen Reward
+[2025-11-15 02:52:05] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 02:52:05] Not enough books for reward: Notebook Reward
+[2025-11-15 02:52:05] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 02:52:05] Not enough books for reward: Drawing Materials
+[2025-11-15 02:52:05] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 02:52:05] Not enough books for reward: School Supplies Bundle
+[2025-11-15 02:52:05] Total rewards earned: 1
+[2025-11-15 02:52:05] ✅ Transaction committed successfully
+[2025-11-15 02:52:05] Response data: Array
+(
+    [attempt_id] => 21
+    [books_completed] => 11
+    [average_score] => 39
+    [rewards_earned] => 1
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+            [0] => Pen Reward
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => The Ugly Duckling
+    [passed] => 1
+    [is_reattempt] => 1
+)
+
+[2025-11-15 02:52:05] === Quiz Save Successful ===
+[2025-11-15 15:45:15] === Quiz Save Request Started ===
+[2025-11-15 15:45:15] User logged in: 1
+[2025-11-15 15:45:15] Raw JSON: {"user_id":1,"book_id":6,"total_questions":5,"correct_answers":3,"score_percentage":60,"time_taken":12,"responses":[{"question_id":26,"user_answer":"A","is_correct":false},{"question_id":27,"user_answer":"B","is_correct":false},{"question_id":28,"user_answer":"C","is_correct":true},{"question_id":29,"user_answer":"D","is_correct":true},{"question_id":30,"user_answer":"B","is_correct":true}]}
+[2025-11-15 15:45:15] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 6
+    [total_questions] => 5
+    [correct_answers] => 3
+    [score_percentage] => 60
+    [time_taken] => 12
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 26
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 27
+                    [user_answer] => B
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 28
+                    [user_answer] => C
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 29
+                    [user_answer] => D
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 30
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 15:45:15] Extracted data - User: 1, Book: 6, Score: 3/5 (60%)
+[2025-11-15 15:45:15] Starting database operations...
+[2025-11-15 15:45:15] Transaction started
+[2025-11-15 15:45:15] User verified: Juan Dela Cruz
+[2025-11-15 15:45:15] Book verified: Harry Potter and the Sorcerer's Stone
+[2025-11-15 15:45:15] Attempting to insert quiz attempt...
+[2025-11-15 15:45:15] Quiz attempt inserted successfully! Attempt ID: 1
+[2025-11-15 15:45:15] System log created
+[2025-11-15 15:45:15] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 15:45:15] Books completed count (any attempt): 1
+[2025-11-15 15:45:15] Average score: 60%
+[2025-11-15 15:45:15] Processing rewards based on 1 books completed...
+[2025-11-15 15:45:15] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 15:45:15] Not enough books for reward: Pen Reward
+[2025-11-15 15:45:15] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 15:45:15] Not enough books for reward: Notebook Reward
+[2025-11-15 15:45:15] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 15:45:15] Not enough books for reward: Drawing Materials
+[2025-11-15 15:45:15] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 15:45:15] Not enough books for reward: School Supplies Bundle
+[2025-11-15 15:45:15] Total rewards earned: 0
+[2025-11-15 15:45:15] ✅ Transaction committed successfully
+[2025-11-15 15:45:15] Response data: Array
+(
+    [attempt_id] => 1
+    [books_completed] => 1
+    [average_score] => 60
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => Harry Potter and the Sorcerer's Stone
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 15:45:15] === Quiz Save Successful ===
+[2025-11-15 15:49:03] === Quiz Save Request Started ===
+[2025-11-15 15:49:03] User logged in: 1
+[2025-11-15 15:49:03] Raw JSON: {"user_id":1,"book_id":11,"total_questions":5,"correct_answers":5,"score_percentage":100,"time_taken":12,"responses":[{"question_id":51,"user_answer":"B","is_correct":true},{"question_id":52,"user_answer":"B","is_correct":true},{"question_id":53,"user_answer":"B","is_correct":true},{"question_id":54,"user_answer":"B","is_correct":true},{"question_id":55,"user_answer":"B","is_correct":true}]}
+[2025-11-15 15:49:03] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 11
+    [total_questions] => 5
+    [correct_answers] => 5
+    [score_percentage] => 100
+    [time_taken] => 12
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 51
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 52
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 53
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 54
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 55
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 15:49:03] Extracted data - User: 1, Book: 11, Score: 5/5 (100%)
+[2025-11-15 15:49:03] Starting database operations...
+[2025-11-15 15:49:03] Transaction started
+[2025-11-15 15:49:03] User verified: Juan Dela Cruz
+[2025-11-15 15:49:03] Book verified: ads
+[2025-11-15 15:49:03] Attempting to insert quiz attempt...
+[2025-11-15 15:49:03] Quiz attempt inserted successfully! Attempt ID: 2
+[2025-11-15 15:49:03] System log created
+[2025-11-15 15:49:03] Is re-attempt: YES (Previous attempts: 1)
+[2025-11-15 15:49:03] Books completed count (any attempt): 2
+[2025-11-15 15:49:03] Average score: 80%
+[2025-11-15 15:49:03] Processing rewards based on 2 books completed...
+[2025-11-15 15:49:03] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 15:49:03] Not enough books for reward: Pen Reward
+[2025-11-15 15:49:03] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 15:49:03] Not enough books for reward: Notebook Reward
+[2025-11-15 15:49:03] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 15:49:03] Not enough books for reward: Drawing Materials
+[2025-11-15 15:49:03] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 15:49:03] Not enough books for reward: School Supplies Bundle
+[2025-11-15 15:49:03] Total rewards earned: 0
+[2025-11-15 15:49:03] ✅ Transaction committed successfully
+[2025-11-15 15:49:03] Response data: Array
+(
+    [attempt_id] => 2
+    [books_completed] => 2
+    [average_score] => 80
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => ads
+    [passed] => 1
+    [is_reattempt] => 1
+)
+
+[2025-11-15 15:49:03] === Quiz Save Successful ===
+[2025-11-15 16:48:06] === Quiz Save Request Started ===
+[2025-11-15 16:48:06] User logged in: 1
+[2025-11-15 16:48:06] Raw JSON: {"user_id":1,"book_id":11,"total_questions":10,"correct_answers":6,"score_percentage":60,"time_taken":141,"responses":[{"question_id":51,"user_answer":"B","is_correct":true},{"question_id":52,"user_answer":"C","is_correct":false},{"question_id":53,"user_answer":"A","is_correct":false},{"question_id":54,"user_answer":"B","is_correct":true},{"question_id":55,"user_answer":"B","is_correct":true},{"question_id":56,"user_answer":"B","is_correct":true},{"question_id":57,"user_answer":"D","is_correct":false},{"question_id":58,"user_answer":"A","is_correct":false},{"question_id":59,"user_answer":"B","is_correct":true},{"question_id":60,"user_answer":"B","is_correct":true}]}
+[2025-11-15 16:48:06] Quiz Data: Array
+(
+    [user_id] => 1
+    [book_id] => 11
+    [total_questions] => 10
+    [correct_answers] => 6
+    [score_percentage] => 60
+    [time_taken] => 141
+    [responses] => Array
+        (
+            [0] => Array
+                (
+                    [question_id] => 51
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [1] => Array
+                (
+                    [question_id] => 52
+                    [user_answer] => C
+                    [is_correct] => 
+                )
+
+            [2] => Array
+                (
+                    [question_id] => 53
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [3] => Array
+                (
+                    [question_id] => 54
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [4] => Array
+                (
+                    [question_id] => 55
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [5] => Array
+                (
+                    [question_id] => 56
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [6] => Array
+                (
+                    [question_id] => 57
+                    [user_answer] => D
+                    [is_correct] => 
+                )
+
+            [7] => Array
+                (
+                    [question_id] => 58
+                    [user_answer] => A
+                    [is_correct] => 
+                )
+
+            [8] => Array
+                (
+                    [question_id] => 59
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+            [9] => Array
+                (
+                    [question_id] => 60
+                    [user_answer] => B
+                    [is_correct] => 1
+                )
+
+        )
+
+)
+
+[2025-11-15 16:48:06] Extracted data - User: 1, Book: 11, Score: 6/10 (60%)
+[2025-11-15 16:48:06] Starting database operations...
+[2025-11-15 16:48:06] Transaction started
+[2025-11-15 16:48:06] User verified: Juan Dela Cruz
+[2025-11-15 16:48:06] Book verified: ads
+[2025-11-15 16:48:06] Attempting to insert quiz attempt...
+[2025-11-15 16:48:06] Quiz attempt inserted successfully! Attempt ID: 3
+[2025-11-15 16:48:06] System log created
+[2025-11-15 16:48:06] Is re-attempt: YES (Previous attempts: 2)
+[2025-11-15 16:48:06] Books completed count (any attempt): 2
+[2025-11-15 16:48:06] Average score: 73.3%
+[2025-11-15 16:48:06] Processing rewards based on 2 books completed...
+[2025-11-15 16:48:06] Checking reward: Pen Reward (requires 10 books)
+[2025-11-15 16:48:06] Not enough books for reward: Pen Reward
+[2025-11-15 16:48:06] Checking reward: Notebook Reward (requires 25 books)
+[2025-11-15 16:48:06] Not enough books for reward: Notebook Reward
+[2025-11-15 16:48:06] Checking reward: Drawing Materials (requires 50 books)
+[2025-11-15 16:48:06] Not enough books for reward: Drawing Materials
+[2025-11-15 16:48:06] Checking reward: School Supplies Bundle (requires 100 books)
+[2025-11-15 16:48:06] Not enough books for reward: School Supplies Bundle
+[2025-11-15 16:48:06] Total rewards earned: 0
+[2025-11-15 16:48:06] ✅ Transaction committed successfully
+[2025-11-15 16:48:06] Response data: Array
+(
+    [attempt_id] => 3
+    [books_completed] => 2
+    [average_score] => 73.3
+    [rewards_earned] => 0
+    [new_rewards] => Array
+        (
+        )
+
+    [all_rewards] => Array
+        (
+        )
+
+    [user_name] => Juan Dela Cruz
+    [book_title] => ads
+    [passed] => 
+    [is_reattempt] => 1
+)
+
+[2025-11-15 16:48:06] === Quiz Save Successful ===

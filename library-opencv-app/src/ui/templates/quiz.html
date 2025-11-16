@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Library OpenCV App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form id="quiz-form" method="POST" action="/submit-quiz">
+            <div class="question">
+                <h4>Question 1: What is the capital of France?</h4>
+                <div class="options">
+                    <label><input type="radio" name="question1" value="A"> A) Berlin</label>
+                    <label><input type="radio" name="question1" value="B"> B) Madrid</label>
+                    <label><input type="radio" name="question1" value="C"> C) Paris</label>
+                    <label><input type="radio" name="question1" value="D"> D) Rome</label>
+                </div>
+            </div>
+            <div class="question">
+                <h4>Question 2: What is 2 + 2?</h4>
+                <div class="options">
+                    <label><input type="radio" name="question2" value="A"> A) 3</label>
+                    <label><input type="radio" name="question2" value="B"> B) 4</label>
+                    <label><input type="radio" name="question2" value="C"> C) 5</label>
+                    <label><input type="radio" name="question2" value="D"> D) 6</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">Submit Quiz</button>
+        </form>
+    </div>
+</body>
+</html>

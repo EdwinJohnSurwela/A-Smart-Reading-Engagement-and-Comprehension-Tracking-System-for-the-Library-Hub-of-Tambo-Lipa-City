@@ -1,0 +1,514 @@
+-- =====================================================
+-- SMART READING ENGAGEMENT AND COMPREHENSION TRACKING SYSTEM
+-- Library Hub of Tambo, Lipa City - MySQL Database Schema
+-- =====================================================
+
+-- Create Database
+CREATE DATABASE IF NOT EXISTS library_reading_system;
+USE library_reading_system;
+
+-- =====================================================
+-- TABLE STRUCTURES FOR ERD
+-- =====================================================
+
+-- 1. USERS TABLE (Students, Teachers, Librarians, Admins)
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id VARCHAR(20) UNIQUE,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    user_type ENUM('student', 'teacher', 'librarian', 'admin') NOT NULL,
+    grade_level INT NULL, -- Only for students
+    class_section VARCHAR(10) NULL, -- Only for students
+    status ENUM('active', 'inactive', 'suspended') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 2. BOOKS TABLE
+CREATE TABLE books (
+    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    isbn VARCHAR(20) UNIQUE,
+    qr_code VARCHAR(100) UNIQUE NOT NULL,
+    qr_code_path VARCHAR(255), -- Path to QR code image file
+    genre VARCHAR(50),
+    recommended_grade_level VARCHAR(10), -- e.g., "3-5", "4-6"
+    total_pages INT,
+    difficulty_level ENUM('beginner', 'intermediate', 'advanced') DEFAULT 'beginner',
+    book_cover_url VARCHAR(255),
+    description TEXT,
+    is_available BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 3. BOOK BORROWING RECORDS
+CREATE TABLE book_borrowings (
+    borrowing_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    borrowed_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expected_return_date DATE,
+    actual_return_date DATE NULL,
+    status ENUM('borrowed', 'returned', 'overdue') DEFAULT 'borrowed',
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE
+);
+
+-- 4. QUIZ QUESTIONS TABLE
+CREATE TABLE quiz_questions (
+    question_id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT NOT NULL,
+    question_text TEXT NOT NULL,
+    option_a VARCHAR(255) NOT NULL,
+    option_b VARCHAR(255) NOT NULL,
+    option_c VARCHAR(255) NOT NULL,
+    option_d VARCHAR(255) NOT NULL,
+    correct_answer ENUM('A', 'B', 'C', 'D') NOT NULL,
+    difficulty_level ENUM('easy', 'medium', 'hard') DEFAULT 'medium',
+    points INT DEFAULT 1,
+    created_by INT NOT NULL, -- Admin or Teacher who created the question
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE,
+    FOREIGN KEY (created_by) REFERENCES users(user_id)
+);
+
+-- 5. QUIZ ATTEMPTS TABLE
+CREATE TABLE quiz_attempts (
+    attempt_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    total_questions INT NOT NULL,
+    correct_answers INT NOT NULL,
+    score_percentage DECIMAL(5,2) NOT NULL,
+    time_taken INT, -- in seconds
+    attempt_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE
+);
+
+-- 6. QUIZ RESPONSES TABLE (Individual question responses)
+CREATE TABLE quiz_responses (
+    response_id INT PRIMARY KEY AUTO_INCREMENT,
+    attempt_id INT NOT NULL,
+    question_id INT NOT NULL,
+    user_answer ENUM('A', 'B', 'C', 'D') NOT NULL,
+    is_correct BOOLEAN NOT NULL,
+    response_time INT, -- in seconds
+    FOREIGN KEY (attempt_id) REFERENCES quiz_attempts(attempt_id) ON DELETE CASCADE,
+    FOREIGN KEY (question_id) REFERENCES quiz_questions(question_id) ON DELETE CASCADE
+);
+
+-- 7. REWARDS TABLE
+CREATE TABLE rewards (
+    reward_id INT PRIMARY KEY AUTO_INCREMENT,
+    reward_name VARCHAR(100) NOT NULL,
+    reward_description TEXT,
+    books_required INT NOT NULL, -- Number of books needed to unlock reward
+    reward_type ENUM('physical', 'digital', 'badge') DEFAULT 'physical',
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 8. USER REWARDS TABLE (Tracking earned rewards)
+CREATE TABLE user_rewards (
+    user_reward_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    reward_id INT NOT NULL,
+    earned_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_claimed BOOLEAN DEFAULT FALSE,
+    claimed_date TIMESTAMP NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (reward_id) REFERENCES rewards(reward_id) ON DELETE CASCADE
+);
+
+-- 9. READING PROGRESS TABLE
+CREATE TABLE reading_progress (
+    progress_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    pages_read INT DEFAULT 0,
+    reading_status ENUM('not_started', 'in_progress', 'completed') DEFAULT 'not_started',
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completion_date TIMESTAMP NULL,
+    reading_time_minutes INT DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE
+);
+
+-- 10. SYSTEM LOGS TABLE (For tracking system activities)
+CREATE TABLE system_logs (
+    log_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NULL,
+    action VARCHAR(100) NOT NULL,
+    description TEXT,
+    ip_address VARCHAR(45),
+    user_agent TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE SET NULL
+);
+
+-- =====================================================
+-- INSERT SAMPLE DATA
+-- =====================================================
+
+-- Insert sample rewards
+INSERT INTO rewards (reward_name, reward_description, books_required, reward_type) VALUES
+('Pen Reward', 'A special pen for dedicated readers', 10, 'physical'),
+('Notebook Reward', 'A beautiful notebook for book lovers', 25, 'physical'),
+('Reading Champion Badge', 'Digital badge for exceptional readers', 50, 'digital'),
+('Library VIP Pass', 'Priority access to new books', 100, 'digital');
+
+-- Insert sample users
+INSERT INTO users (student_id, full_name, email, password_hash, user_type, grade_level, class_section) VALUES
+('2024-001', 'Juan Dela Cruz', 'juan.delacruz@student.lipacity.edu', '$2y$10$example_hash_1', 'student', 5, 'A'),
+('2024-002', 'Maria Santos', 'maria.santos@student.lipacity.edu', '$2y$10$example_hash_2', 'student', 4, 'B'),
+('2024-003', 'Jose Rizal Jr.', 'jose.rizal@student.lipacity.edu', '$2y$10$example_hash_3', 'student', 6, 'A'),
+('2024-004', 'Ana Reyes', 'ana.reyes@student.lipacity.edu', '$2y$10$example_hash_4', 'student', 5, 'C'),
+('T001', 'Mrs. Elena Garcia', 'elena.garcia@teacher.lipacity.edu', '$2y$10$example_hash_5', 'teacher', NULL, NULL),
+('L001', 'Mr. Roberto Hernandez', 'roberto.hernandez@librarian.lipacity.edu', '$2y$10$example_hash_6', 'librarian', NULL, NULL),
+('A001', 'Dr. Carmen Lopez', 'carmen.lopez@admin.lipacity.edu', '$2y$10$example_hash_7', 'admin', NULL, NULL);
+
+-- Insert sample books
+INSERT INTO books (title, author, isbn, qr_code, qr_code_path, genre, recommended_grade_level, total_pages, difficulty_level, description) VALUES
+('The Adventures of Tom Sawyer', 'Mark Twain', '978-0486400778', 'QR001', 'qr_codes/QR001.png', 'Adventure', '4-6', 224, 'intermediate', 'Classic adventure story of a mischievous boy in Missouri.'),
+('Charlotte''s Web', 'E.B. White', '978-0064400558', 'QR002', 'qr_codes/QR002.png', 'Fiction', '3-5', 192, 'beginner', 'Heartwarming tale of friendship between a pig and spider.'),
+('Where the Red Fern Grows', 'Wilson Rawls', '978-0440412670', 'QR003', 'qr_codes/QR003.png', 'Adventure', '4-6', 272, 'intermediate', 'Story of a boy and his hunting dogs in the Ozark Mountains.'),
+('The Lion, the Witch and the Wardrobe', 'C.S. Lewis', '978-0064404990', 'QR004', 'qr_codes/QR004.png', 'Fantasy', '3-6', 208, 'intermediate', 'Magical adventure in the land of Narnia.'),
+('Bridge to Terabithia', 'Katherine Paterson', '978-0064401845', 'QR005', 'qr_codes/QR005.png', 'Fiction', '4-6', 144, 'intermediate', 'Story of friendship and imagination.');
+
+-- Insert sample quiz questions for "The Adventures of Tom Sawyer"
+INSERT INTO quiz_questions (book_id, question_text, option_a, option_b, option_c, option_d, correct_answer, difficulty_level, created_by) VALUES
+(1, 'What is the name of Tom Sawyer''s best friend?', 'Huckleberry Finn', 'Joe Harper', 'Ben Rogers', 'Sid Sawyer', 'A', 'easy', 7),
+(1, 'What does Tom Sawyer convince his friends to do?', 'Go fishing', 'Paint the fence', 'Skip school', 'Steal apples', 'B', 'medium', 7),
+(1, 'Where does Tom Sawyer live?', 'New York', 'Boston', 'St. Petersburg', 'Chicago', 'C', 'medium', 7),
+(1, 'Who is Tom''s guardian?', 'His mother', 'Aunt Polly', 'His father', 'Uncle John', 'B', 'easy', 7),
+(1, 'What genre is ''The Adventures of Tom Sawyer''?', 'Mystery', 'Romance', 'Adventure', 'Horror', 'C', 'easy', 7);
+
+-- =====================================================
+-- QUERIES FOR QR CODE MANAGEMENT
+-- =====================================================
+
+-- Add QR code path column to existing books table (if not exists)
+ALTER TABLE books ADD COLUMN IF NOT EXISTS qr_code_path VARCHAR(255);
+
+-- Update QR code paths for existing books
+UPDATE books SET qr_code_path = 'qr_codes/QR001.png' WHERE book_id = 1;
+UPDATE books SET qr_code_path = 'qr_codes/QR002.png' WHERE book_id = 2;
+UPDATE books SET qr_code_path = 'qr_codes/QR003.png' WHERE book_id = 3;
+UPDATE books SET qr_code_path = 'qr_codes/QR004.png' WHERE book_id = 4;
+UPDATE books SET qr_code_path = 'qr_codes/QR005.png' WHERE book_id = 5;
+
+-- Retrieve book with QR code path
+SELECT book_id, title, author, qr_code, qr_code_path 
+FROM books 
+WHERE qr_code = ?;
+
+-- Get all books with their QR code images
+SELECT book_id, title, author, qr_code, qr_code_path, genre, recommended_grade_level
+FROM books
+ORDER BY book_id;
+
+-- =====================================================
+-- USEFUL QUERIES FOR THE SYSTEM
+-- =====================================================
+
+-- 1. USER AUTHENTICATION QUERY
+SELECT user_id, full_name, user_type, grade_level, status 
+FROM users 
+WHERE (email = ? OR student_id = ?) AND password_hash = ?;
+
+-- 2. GET BOOK INFORMATION BY QR CODE
+SELECT book_id, title, author, genre, recommended_grade_level, description, total_pages
+FROM books 
+WHERE qr_code = ? AND is_available = TRUE;
+
+-- 3. GET QUIZ QUESTIONS FOR A BOOK
+SELECT question_id, question_text, option_a, option_b, option_c, option_d, points
+FROM quiz_questions 
+WHERE book_id = ? 
+ORDER BY RAND() 
+LIMIT 5;
+
+-- 4. RECORD BOOK BORROWING
+INSERT INTO book_borrowings (user_id, book_id, expected_return_date) 
+VALUES (?, ?, DATE_ADD(CURDATE(), INTERVAL 14 DAY));
+
+-- 5. SUBMIT QUIZ ATTEMPT
+INSERT INTO quiz_attempts (user_id, book_id, total_questions, correct_answers, score_percentage, time_taken) 
+VALUES (?, ?, ?, ?, ?, ?);
+
+-- 6. RECORD INDIVIDUAL QUIZ RESPONSES
+INSERT INTO quiz_responses (attempt_id, question_id, user_answer, is_correct, response_time) 
+VALUES (?, ?, ?, ?, ?);
+
+-- 7. GET STUDENT READING STATISTICS
+SELECT 
+    COUNT(DISTINCT qa.book_id) as books_read,
+    AVG(qa.score_percentage) as average_score,
+    COUNT(qa.attempt_id) as total_quizzes,
+    SUM(CASE WHEN qa.score_percentage >= 80 THEN 1 ELSE 0 END) as high_scores
+FROM quiz_attempts qa 
+WHERE qa.user_id = ?;
+
+-- 8. CHECK REWARD ELIGIBILITY
+SELECT 
+    r.reward_id, r.reward_name, r.books_required,
+    COUNT(DISTINCT qa.book_id) as books_completed,
+    CASE 
+        WHEN COUNT(DISTINCT qa.book_id) >= r.books_required THEN 'ELIGIBLE'
+        ELSE 'NOT_ELIGIBLE'
+    END as status
+FROM rewards r
+CROSS JOIN quiz_attempts qa
+WHERE qa.user_id = ? AND qa.score_percentage >= 70
+GROUP BY r.reward_id, r.reward_name, r.books_required;
+
+-- 9. ADMIN DASHBOARD - SYSTEM OVERVIEW
+SELECT 
+    (SELECT COUNT(*) FROM users WHERE user_type = 'student' AND status = 'active') as total_students,
+    (SELECT COUNT(DISTINCT qa.book_id) FROM quiz_attempts qa) as books_with_activity,
+    (SELECT COUNT(*) FROM quiz_attempts) as total_quizzes_taken,
+    (SELECT AVG(score_percentage) FROM quiz_attempts) as system_average_score;
+
+-- 10. LIBRARIAN DASHBOARD - BOOK STATISTICS
+SELECT 
+    b.book_id, b.title, b.author, b.qr_code,
+    COUNT(DISTINCT qa.user_id) as unique_readers,
+    COUNT(qa.attempt_id) as total_attempts,
+    AVG(qa.score_percentage) as average_score,
+    MAX(qa.attempt_date) as last_read
+FROM books b
+LEFT JOIN quiz_attempts qa ON b.book_id = qa.book_id
+GROUP BY b.book_id, b.title, b.author, b.qr_code
+ORDER BY unique_readers DESC;
+
+-- 11. TEACHER DASHBOARD - CLASS PERFORMANCE
+SELECT 
+    u.user_id, u.full_name, u.student_id,
+    COUNT(DISTINCT qa.book_id) as books_read,
+    AVG(qa.score_percentage) as average_score,
+    COUNT(ur.reward_id) as rewards_earned,
+    MAX(qa.attempt_date) as last_activity
+FROM users u
+LEFT JOIN quiz_attempts qa ON u.user_id = qa.user_id
+LEFT JOIN user_rewards ur ON u.user_id = ur.user_id
+WHERE u.user_type = 'student' AND u.grade_level = ? -- Teacher's assigned grade
+GROUP BY u.user_id, u.full_name, u.student_id
+ORDER BY books_read DESC, average_score DESC;
+
+-- 12. GET STUDENT PROGRESS WITH REWARDS
+SELECT 
+    u.full_name,
+    COUNT(DISTINCT qa.book_id) as books_completed,
+    AVG(qa.score_percentage) as average_score,
+    GROUP_CONCAT(DISTINCT r.reward_name SEPARATOR ', ') as earned_rewards
+FROM users u
+LEFT JOIN quiz_attempts qa ON u.user_id = qa.user_id
+LEFT JOIN user_rewards ur ON u.user_id = ur.user_id
+LEFT JOIN rewards r ON ur.reward_id = r.reward_id
+WHERE u.user_id = ?
+GROUP BY u.user_id, u.full_name;
+
+-- 13. POPULAR BOOKS RANKING
+SELECT 
+    b.title, b.author,
+    COUNT(DISTINCT qa.user_id) as total_readers,
+    COUNT(qa.attempt_id) as total_attempts,
+    AVG(qa.score_percentage) as average_score,
+    ROUND(COUNT(qa.attempt_id) * AVG(qa.score_percentage) / 100, 2) as popularity_index
+FROM books b
+INNER JOIN quiz_attempts qa ON b.book_id = qa.book_id
+GROUP BY b.book_id, b.title, b.author
+ORDER BY popularity_index DESC
+LIMIT 10;
+
+-- 14. RECENT ACTIVITY LOG
+SELECT 
+    u.full_name, u.student_id,
+    b.title as book_title,
+    qa.score_percentage,
+    qa.attempt_date,
+    CASE 
+        WHEN qa.score_percentage >= 90 THEN 'Excellent'
+        WHEN qa.score_percentage >= 80 THEN 'Good'
+        WHEN qa.score_percentage >= 70 THEN 'Satisfactory'
+        ELSE 'Needs Improvement'
+    END as performance_level
+FROM quiz_attempts qa
+INNER JOIN users u ON qa.user_id = u.user_id
+INNER JOIN books b ON qa.book_id = b.book_id
+ORDER BY qa.attempt_date DESC
+LIMIT 50;
+
+-- 15. REWARD DISTRIBUTION REPORT
+SELECT 
+    r.reward_name,
+    COUNT(ur.user_reward_id) as times_earned,
+    COUNT(CASE WHEN ur.is_claimed = TRUE THEN 1 END) as times_claimed,
+    ROUND(COUNT(CASE WHEN ur.is_claimed = TRUE THEN 1 END) * 100.0 / COUNT(ur.user_reward_id), 2) as claim_rate
+FROM rewards r
+LEFT JOIN user_rewards ur ON r.reward_id = ur.reward_id
+GROUP BY r.reward_id, r.reward_name
+ORDER BY times_earned DESC;
+
+-- =====================================================
+-- STORED PROCEDURES FOR COMMON OPERATIONS
+-- =====================================================
+
+DELIMITER //
+
+-- Procedure to automatically check and assign rewards
+CREATE PROCEDURE CheckAndAssignRewards(IN student_user_id INT)
+BEGIN
+    DECLARE done INT DEFAULT FALSE;
+    DECLARE reward_id_var INT;
+    DECLARE books_required_var INT;
+    DECLARE books_completed INT;
+    
+    DECLARE reward_cursor CURSOR FOR 
+        SELECT reward_id, books_required FROM rewards WHERE is_active = TRUE;
+    
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    -- Get number of books completed by student
+    SELECT COUNT(DISTINCT book_id) INTO books_completed
+    FROM quiz_attempts 
+    WHERE user_id = student_user_id AND score_percentage >= 70;
+    
+    OPEN reward_cursor;
+    
+    read_loop: LOOP
+        FETCH reward_cursor INTO reward_id_var, books_required_var;
+        IF done THEN
+            LEAVE read_loop;
+        END IF;
+        
+        -- Check if student qualifies for this reward and hasn't already earned it
+        IF books_completed >= books_required_var AND 
+           NOT EXISTS (SELECT 1 FROM user_rewards WHERE user_id = student_user_id AND reward_id = reward_id_var) THEN
+            INSERT INTO user_rewards (user_id, reward_id) VALUES (student_user_id, reward_id_var);
+        END IF;
+        
+    END LOOP;
+    
+    CLOSE reward_cursor;
+END//
+
+-- Procedure to get comprehensive student report
+CREATE PROCEDURE GetStudentReport(IN student_user_id INT)
+BEGIN
+    -- Basic student info and statistics
+    SELECT 
+        u.full_name, u.student_id, u.grade_level,
+        COUNT(DISTINCT qa.book_id) as books_read,
+        COUNT(qa.attempt_id) as total_quiz_attempts,
+        AVG(qa.score_percentage) as average_score,
+        MAX(qa.attempt_date) as last_activity,
+        COUNT(ur.reward_id) as total_rewards_earned
+    FROM users u
+    LEFT JOIN quiz_attempts qa ON u.user_id = qa.user_id
+    LEFT JOIN user_rewards ur ON u.user_id = ur.user_id
+    WHERE u.user_id = student_user_id
+    GROUP BY u.user_id, u.full_name, u.student_id, u.grade_level;
+    
+    -- Recent quiz attempts
+    SELECT 
+        b.title, qa.score_percentage, qa.attempt_date
+    FROM quiz_attempts qa
+    INNER JOIN books b ON qa.book_id = b.book_id
+    WHERE qa.user_id = student_user_id
+    ORDER BY qa.attempt_date DESC
+    LIMIT 10;
+    
+    -- Earned rewards
+    SELECT 
+        r.reward_name, ur.earned_date, ur.is_claimed
+    FROM user_rewards ur
+    INNER JOIN rewards r ON ur.reward_id = r.reward_id
+    WHERE ur.user_id = student_user_id
+    ORDER BY ur.earned_date DESC;
+END//
+
+DELIMITER ;
+
+-- =====================================================
+-- INDEXES FOR PERFORMANCE OPTIMIZATION
+-- =====================================================
+
+-- Indexes for faster queries
+CREATE INDEX idx_users_email ON users(email);
+CREATE INDEX idx_users_student_id ON users(student_id);
+CREATE INDEX idx_users_type ON users(user_type);
+CREATE INDEX idx_books_qr_code ON books(qr_code);
+CREATE INDEX idx_quiz_attempts_user_book ON quiz_attempts(user_id, book_id);
+CREATE INDEX idx_quiz_attempts_date ON quiz_attempts(attempt_date);
+CREATE INDEX idx_user_rewards_user ON user_rewards(user_id);
+CREATE INDEX idx_book_borrowings_user ON book_borrowings(user_id);
+CREATE INDEX idx_book_borrowings_status ON book_borrowings(status);
+
+-- =====================================================
+-- VIEWS FOR COMMON DATA ACCESS
+-- =====================================================
+
+-- View for student dashboard data
+CREATE VIEW student_dashboard_view AS
+SELECT 
+    u.user_id, u.full_name, u.student_id,
+    COUNT(DISTINCT qa.book_id) as books_read,
+    AVG(qa.score_percentage) as average_score,
+    COUNT(ur.reward_id) as rewards_earned,
+    MAX(qa.attempt_date) as last_read_date
+FROM users u
+LEFT JOIN quiz_attempts qa ON u.user_id = qa.user_id
+LEFT JOIN user_rewards ur ON u.user_id = ur.user_id
+WHERE u.user_type = 'student'
+GROUP BY u.user_id, u.full_name, u.student_id;
+
+-- View for book popularity
+CREATE VIEW book_popularity_view AS
+SELECT 
+    b.book_id, b.title, b.author, b.genre,
+    COUNT(DISTINCT qa.user_id) as total_readers,
+    COUNT(qa.attempt_id) as total_attempts,
+    AVG(qa.score_percentage) as average_score
+FROM books b
+LEFT JOIN quiz_attempts qa ON b.book_id = qa.book_id
+GROUP BY b.book_id, b.title, b.author, b.genre;
+
+-- =====================================================
+-- TRIGGERS FOR DATA INTEGRITY AND AUTOMATION
+-- =====================================================
+
+DELIMITER //
+
+-- Trigger to automatically check rewards after quiz completion
+CREATE TRIGGER after_quiz_attempt_insert
+AFTER INSERT ON quiz_attempts
+FOR EACH ROW
+BEGIN
+    CALL CheckAndAssignRewards(NEW.user_id);
+END//
+
+-- Trigger to update book availability when borrowed
+CREATE TRIGGER after_book_borrow_insert
+AFTER INSERT ON book_borrowings
+FOR EACH ROW
+BEGIN
+    UPDATE books SET is_available = FALSE WHERE book_id = NEW.book_id;
+END//
+
+-- Trigger to update book availability when returned
+CREATE TRIGGER after_book_return_update
+AFTER UPDATE ON book_borrowings
+FOR EACH ROW
+BEGIN
+    IF NEW.status = 'returned' AND OLD.status != 'returned' THEN
+        UPDATE books SET is_available = TRUE WHERE book_id = NEW.book_id;
+    END IF;
+END//
+
+DELIMITER ;
