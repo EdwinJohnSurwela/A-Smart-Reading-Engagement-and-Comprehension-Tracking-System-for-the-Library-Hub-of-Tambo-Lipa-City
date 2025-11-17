@@ -27,10 +27,10 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Database Configuration
-define('DB_HOST', 'sql302.infinityfree.com');
-define('DB_USER', 'if0_40429281');
-define('DB_PASS', '1sG1hRhT1oDwHs');
-define('DB_NAME', 'if0_40429281_library_reading_system');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'library_reading_system');
 
 // Create database connection
 try {
