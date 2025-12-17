@@ -1,8 +1,0 @@
-opencv-python
-flask
-qrcode
-numpy
-opencv-python-headless
-flask-cors
-sqlalchemy
-pillow
